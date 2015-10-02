@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,8 +26,16 @@
 
 - (IBAction)changeToArabic:(id)sender {
     
+    [self changeViewRTL:self.view];
+    for (UIView *tempView in self.view.subviews) {
+        
+        [self changeViewRTL:tempView];
+    }
     
-    for (NSLayoutConstraint *constrain in self.totoView.constraints) {
+}
+-(void)changeViewRTL:(UIView*)tempView{
+    
+    for (NSLayoutConstraint *constrain in tempView.constraints) {
         
         
         NSLayoutAttribute firstAttribute = constrain.firstAttribute;
@@ -49,12 +57,11 @@
             
             constrain.constant *= -1;
             NSLayoutConstraint *constrainNew =  [NSLayoutConstraint constraintWithItem:constrain.firstItem attribute:firstAttribute relatedBy:constrain.relation toItem:constrain.secondItem attribute:secondAttribute multiplier:constrain.multiplier constant:constrain.constant];
-            [self.totoView removeConstraint:constrain];
-            [self.totoView addConstraint:constrainNew];
+            [tempView removeConstraint:constrain];
+            [tempView addConstraint:constrainNew];
             
         }
         
     }
-    
 }
 @end
