@@ -99,14 +99,43 @@
                                     <constraint firstAttribute="width" constant="147" id="rh7-hh-MLF"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upa-PC-XNX" userLabel="TOTO">
+                                <rect key="frame" x="10" y="12" width="305" height="99"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-gJ-KG7">
+                                        <rect key="frame" x="77" y="42" width="46" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqw-6a-AbH">
+                                        <rect key="frame" x="131" y="42" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.23137254900000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42423650070000002" green="0.60141145610000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dhG-gJ-KG7" firstAttribute="baseline" secondItem="lqw-6a-AbH" secondAttribute="baseline" id="Eci-bu-Np8"/>
+                                    <constraint firstItem="dhG-gJ-KG7" firstAttribute="leading" secondItem="upa-PC-XNX" secondAttribute="leading" constant="77" id="a8D-Uj-dhg" userLabel="tototo"/>
+                                    <constraint firstAttribute="height" constant="99" id="bXL-Q1-Rxd" userLabel="Height - (99) "/>
+                                    <constraint firstItem="dhG-gJ-KG7" firstAttribute="top" secondItem="upa-PC-XNX" secondAttribute="top" constant="42" id="hyC-HC-AU9"/>
+                                    <constraint firstItem="lqw-6a-AbH" firstAttribute="leading" secondItem="dhG-gJ-KG7" secondAttribute="trailing" constant="8" id="wsD-sU-jqP" userLabel="toto"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="upa-PC-XNX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="12" id="1gV-Hr-Hzc"/>
                             <constraint firstItem="qPL-na-Eo4" firstAttribute="baseline" secondItem="paa-io-Roo" secondAttribute="baseline" id="3Ou-7R-8Kk"/>
                             <constraint firstItem="XrZ-5w-hn1" firstAttribute="leading" secondItem="LLF-zd-Dl0" secondAttribute="trailing" constant="30" id="5cI-nl-nBz"/>
                             <constraint firstItem="LWl-N0-JeZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="7ke-m3-jGm"/>
                             <constraint firstItem="aR9-lg-XFq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="CX6-hq-79b"/>
                             <constraint firstItem="LLF-zd-Dl0" firstAttribute="top" secondItem="Jcu-Pg-plJ" secondAttribute="bottom" constant="14" id="FZa-hK-FvB"/>
+                            <constraint firstItem="upa-PC-XNX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="FoL-4X-Me0"/>
                             <constraint firstAttribute="trailing" secondItem="aR9-lg-XFq" secondAttribute="trailing" constant="16" id="Ofp-6R-bOe"/>
                             <constraint firstAttribute="trailing" secondItem="XrZ-5w-hn1" secondAttribute="trailing" constant="70" id="Q7g-9e-f3d"/>
                             <constraint firstItem="XrZ-5w-hn1" firstAttribute="baseline" secondItem="LLF-zd-Dl0" secondAttribute="baseline" id="RPH-Fs-CE2"/>
@@ -122,9 +151,13 @@
                             <constraint firstItem="paa-io-Roo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="60" id="ooC-BQ-tnF" userLabel="hamdy"/>
                             <constraint firstItem="paa-io-Roo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="117" id="qSg-Fj-Fc4"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aR9-lg-XFq" secondAttribute="bottom" constant="8" id="uG9-Ji-buS"/>
+                            <constraint firstAttribute="trailing" secondItem="upa-PC-XNX" secondAttribute="trailing" constant="5" id="xPE-p0-Wd3"/>
                             <constraint firstItem="1Eg-9s-XOZ" firstAttribute="trailing" secondItem="aMO-5M-ugM" secondAttribute="leading" constant="-17" id="yxc-MY-qgD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="totoView" destination="upa-PC-XNX" id="pZ8-ZI-cHn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -26,7 +26,8 @@
 
 - (IBAction)changeToArabic:(id)sender {
     
-    for (NSLayoutConstraint *constrain in self.view.constraints) {
+    
+    for (NSLayoutConstraint *constrain in self.totoView.constraints) {
         
         
         NSLayoutAttribute firstAttribute = constrain.firstAttribute;
@@ -48,13 +49,12 @@
             
             constrain.constant *= -1;
             NSLayoutConstraint *constrainNew =  [NSLayoutConstraint constraintWithItem:constrain.firstItem attribute:firstAttribute relatedBy:constrain.relation toItem:constrain.secondItem attribute:secondAttribute multiplier:constrain.multiplier constant:constrain.constant];
-            [self.view removeConstraint:constrain];
-            [self.view addConstraint:constrainNew];
+            [self.totoView removeConstraint:constrain];
+            [self.totoView addConstraint:constrainNew];
             
         }
         
     }
-
     
 }
 @end
