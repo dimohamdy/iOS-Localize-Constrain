@@ -10,14 +10,14 @@
 	<string>LocalizeConstrain</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1BD9F8199B5DB65102D2D60F81520FD9ADC5C197</key>
+		<key>3F576D16E9B95FC0BDC63664A2A923665043430C</key>
 		<string>https://github.com/dimohamdy/iOS-Localize-Constrain.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LocalizeConstrain.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1BD9F8199B5DB65102D2D60F81520FD9ADC5C197</key>
+		<key>3F576D16E9B95FC0BDC63664A2A923665043430C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1BD9F8199B5DB65102D2D60F81520FD9ADC5C197</string>
+	<string>3F576D16E9B95FC0BDC63664A2A923665043430C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1BD9F8199B5DB65102D2D60F81520FD9ADC5C197</string>
+			<string>3F576D16E9B95FC0BDC63664A2A923665043430C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LocalizeConstrain</string>
 		</dict>
