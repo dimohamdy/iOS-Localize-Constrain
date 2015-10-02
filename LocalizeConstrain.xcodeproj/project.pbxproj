@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37921CF51BBE2DD20090387C /* LocalizeConstrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37921CF41BBE2DD20090387C /* LocalizeConstrainTests.m */; };
 		37DDFA8F1BBAEE3C003C3ED5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA8E1BBAEE3C003C3ED5 /* main.m */; };
 		37DDFA921BBAEE3C003C3ED5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA911BBAEE3C003C3ED5 /* AppDelegate.m */; };
 		37DDFA951BBAEE3C003C3ED5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA941BBAEE3C003C3ED5 /* ViewController.m */; };
 		37DDFA981BBAEE3C003C3ED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DDFA961BBAEE3C003C3ED5 /* Main.storyboard */; };
 		37DDFA9A1BBAEE3C003C3ED5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DDFA991BBAEE3C003C3ED5 /* Images.xcassets */; };
 		37DDFA9D1BBAEE3C003C3ED5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37DDFA9B1BBAEE3C003C3ED5 /* LaunchScreen.xib */; };
-		37DDFAA91BBAEE3D003C3ED5 /* LocalizeConstrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFAA81BBAEE3D003C3ED5 /* LocalizeConstrainTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37921CF41BBE2DD20090387C /* LocalizeConstrainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeConstrainTests.m; sourceTree = "<group>"; };
 		37DDFA891BBAEE3C003C3ED5 /* LocalizeConstrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizeConstrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DDFA8D1BBAEE3C003C3ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37DDFA8E1BBAEE3C003C3ED5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		37DDFA9C1BBAEE3C003C3ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		37DDFAA21BBAEE3D003C3ED5 /* LocalizeConstrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizeConstrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DDFAA71BBAEE3D003C3ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37DDFAA81BBAEE3D003C3ED5 /* LocalizeConstrainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizeConstrainTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 		37DDFAA51BBAEE3D003C3ED5 /* LocalizeConstrainTests */ = {
 			isa = PBXGroup;
 			children = (
-				37DDFAA81BBAEE3D003C3ED5 /* LocalizeConstrainTests.m */,
+				37921CF41BBE2DD20090387C /* LocalizeConstrainTests.m */,
 				37DDFAA61BBAEE3D003C3ED5 /* Supporting Files */,
 			);
 			path = LocalizeConstrainTests;
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37DDFAA91BBAEE3D003C3ED5 /* LocalizeConstrainTests.m in Sources */,
+				37921CF51BBE2DD20090387C /* LocalizeConstrainTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
