@@ -1,5 +1,7 @@
 # iOS-Localize-Constrain
 
+[![Join the chat at https://gitter.im/dimohamdy/iOS-Localize-Constrain](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dimohamdy/iOS-Localize-Constrain?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 Localize-Constrain-On-The-Fly
 
