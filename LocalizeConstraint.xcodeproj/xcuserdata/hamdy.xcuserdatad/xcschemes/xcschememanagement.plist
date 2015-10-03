@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LocalizeConstrain.xcscheme</key>
+		<key>LocalizeConstraint.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>LocalizeConstrainTests.xcscheme</key>
+		<key>LocalizeConstraintTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>

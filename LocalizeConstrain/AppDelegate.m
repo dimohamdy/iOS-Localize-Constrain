@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  TestRTL
+//  LocalizeConstraint
 //
-//  Created by Hamdy on 9/29/15.
-//  Copyright (c) 2015 Hamdy. All rights reserved.
+//  Created by dimo.hamdy on 9/29/15.
+//  Copyright (c) 2015 dimo.hamdy. All rights reserved.
 //
 
 #import "AppDelegate.h"
