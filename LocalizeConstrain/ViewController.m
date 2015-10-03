@@ -34,7 +34,9 @@
     
 }
 -(void)changeViewRTL:(UIView*)tempView{
-    
+    NSMutableArray *constraintsToAdd = [[NSMutableArray alloc]init];
+    NSMutableArray *constraintsToRemove = [[NSMutableArray alloc]init];
+
     for (NSLayoutConstraint *constraint in tempView.constraints) {
         
         
@@ -48,11 +50,21 @@
             
             constraint.constant *= -1;
             NSLayoutConstraint *constraintNew =  [NSLayoutConstraint constraintWithItem:constraint.firstItem attribute:firstAttribute relatedBy:constraint.relation toItem:constraint.secondItem attribute:secondAttribute multiplier:constraint.multiplier constant:constraint.constant];
-            [tempView removeConstraint:constraint];
-            [tempView addConstraint:constraintNew];
+
+            
+            [constraintsToRemove addObject:constraint];
+            [constraintsToAdd addObject:constraintNew];
+
             
         }
         
+    }
+    
+    for (NSLayoutConstraint *constraint in constraintsToRemove) {
+        [tempView removeConstraint:constraint];
+    }
+    for (NSLayoutConstraint *constraint in constraintsToAdd) {
+        [tempView addConstraint:constraint];
     }
 }
 -(NSLayoutAttribute)changeAttributeValue:(NSLayoutAttribute)attribute{
