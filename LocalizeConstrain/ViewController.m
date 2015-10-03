@@ -41,19 +41,10 @@
         NSLayoutAttribute firstAttribute = constrain.firstAttribute;
         NSLayoutAttribute secondAttribute = constrain.secondAttribute;
         
-        if ((firstAttribute == NSLayoutAttributeLeading || firstAttribute == NSLayoutAttributeTrailing) && (secondAttribute == NSLayoutAttributeLeading || secondAttribute == NSLayoutAttributeTrailing)) {
+        if ((firstAttribute == NSLayoutAttributeLeading || firstAttribute == NSLayoutAttributeTrailing ||firstAttribute == NSLayoutAttributeLeft || firstAttribute == NSLayoutAttributeRight ) && (secondAttribute == NSLayoutAttributeLeading || secondAttribute == NSLayoutAttributeTrailing || secondAttribute == NSLayoutAttributeLeft || secondAttribute == NSLayoutAttributeRight)) {
             
-            if (constrain.firstAttribute == NSLayoutAttributeLeading) {
-                firstAttribute = NSLayoutAttributeTrailing;
-            } else if (constrain.firstAttribute == NSLayoutAttributeTrailing) {
-                firstAttribute = NSLayoutAttributeLeading;
-            }
-            
-            if (constrain.secondAttribute == NSLayoutAttributeLeading) {
-                secondAttribute = NSLayoutAttributeTrailing;
-            } else if (constrain.secondAttribute == NSLayoutAttributeTrailing) {
-                secondAttribute = NSLayoutAttributeLeading;
-            }
+            firstAttribute = [self changeAttributeValue:firstAttribute];
+            secondAttribute = [self changeAttributeValue:secondAttribute];
             
             constrain.constant *= -1;
             NSLayoutConstraint *constrainNew =  [NSLayoutConstraint constraintWithItem:constrain.firstItem attribute:firstAttribute relatedBy:constrain.relation toItem:constrain.secondItem attribute:secondAttribute multiplier:constrain.multiplier constant:constrain.constant];
@@ -63,5 +54,23 @@
         }
         
     }
+}
+-(NSLayoutAttribute)changeAttributeValue:(NSLayoutAttribute)attribute{
+    switch (attribute) {
+        case NSLayoutAttributeLeading:
+            attribute = NSLayoutAttributeTrailing;
+        case NSLayoutAttributeTrailing:
+            attribute = NSLayoutAttributeLeading;
+            break;
+        case NSLayoutAttributeLeft:
+            attribute = NSLayoutAttributeRight;
+            break;
+        case NSLayoutAttributeRight:
+            attribute = NSLayoutAttributeLeft;
+            break;
+        default:
+            break;
+    }
+    return attribute;
 }
 @end
