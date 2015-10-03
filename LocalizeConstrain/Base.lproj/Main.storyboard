@@ -68,8 +68,11 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcu-Pg-plJ">
-                                <rect key="frame" x="128" y="248" width="46" height="30"/>
+                                <rect key="frame" x="128" y="248" width="176" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.98416233249999996" blue="0.36238900130000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="tyP-xo-k4W"/>
+                                </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -131,7 +134,7 @@
                         <constraints>
                             <constraint firstItem="upa-PC-XNX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="12" id="1gV-Hr-Hzc"/>
                             <constraint firstItem="qPL-na-Eo4" firstAttribute="baseline" secondItem="paa-io-Roo" secondAttribute="baseline" id="3Ou-7R-8Kk"/>
-                            <constraint firstItem="XrZ-5w-hn1" firstAttribute="left" secondItem="LLF-zd-Dl0" secondAttribute="right" constant="30" id="5cI-nl-nBz"/>
+                            <constraint firstItem="bIt-aZ-pTA" firstAttribute="baseline" secondItem="Jcu-Pg-plJ" secondAttribute="baseline" id="4Ye-7U-bit"/>
                             <constraint firstItem="LWl-N0-JeZ" firstAttribute="left" secondItem="kh9-bI-dsS" secondAttribute="left" constant="10" id="7ke-m3-jGm"/>
                             <constraint firstItem="aR9-lg-XFq" firstAttribute="left" secondItem="kh9-bI-dsS" secondAttribute="left" constant="16" id="CX6-hq-79b"/>
                             <constraint firstItem="LLF-zd-Dl0" firstAttribute="top" secondItem="Jcu-Pg-plJ" secondAttribute="bottom" constant="14" id="FZa-hK-FvB"/>
@@ -139,13 +142,13 @@
                             <constraint firstAttribute="right" secondItem="aR9-lg-XFq" secondAttribute="right" constant="16" id="Ofp-6R-bOe"/>
                             <constraint firstAttribute="right" secondItem="XrZ-5w-hn1" secondAttribute="right" constant="70" id="Q7g-9e-f3d"/>
                             <constraint firstItem="XrZ-5w-hn1" firstAttribute="baseline" secondItem="LLF-zd-Dl0" secondAttribute="baseline" id="RPH-Fs-CE2"/>
-                            <constraint firstItem="bIt-aZ-pTA" firstAttribute="baseline" secondItem="Jcu-Pg-plJ" secondAttribute="baseline" id="U2Q-sT-TMh"/>
                             <constraint firstItem="bIt-aZ-pTA" firstAttribute="left" secondItem="kh9-bI-dsS" secondAttribute="left" constant="50" id="XbX-PJ-iYW"/>
                             <constraint firstItem="paa-io-Roo" firstAttribute="right" secondItem="1Eg-9s-XOZ" secondAttribute="left" constant="-8" id="akU-aX-Qn4"/>
                             <constraint firstItem="qPL-na-Eo4" firstAttribute="baseline" secondItem="aMO-5M-ugM" secondAttribute="baseline" id="bIB-Cs-P5I"/>
                             <constraint firstItem="aR9-lg-XFq" firstAttribute="top" secondItem="LWl-N0-JeZ" secondAttribute="bottom" constant="36" id="cUa-PW-4jn"/>
                             <constraint firstItem="qPL-na-Eo4" firstAttribute="baseline" secondItem="1Eg-9s-XOZ" secondAttribute="baseline" id="eVN-dN-4kk"/>
                             <constraint firstItem="Jcu-Pg-plJ" firstAttribute="left" secondItem="bIt-aZ-pTA" secondAttribute="right" constant="32" id="fy4-eW-So4"/>
+                            <constraint firstItem="LLF-zd-Dl0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="128" id="i0t-s8-8UA"/>
                             <constraint firstItem="LWl-N0-JeZ" firstAttribute="top" secondItem="LLF-zd-Dl0" secondAttribute="bottom" constant="20" id="j0h-tV-PzF"/>
                             <constraint firstItem="aMO-5M-ugM" firstAttribute="right" secondItem="qPL-na-Eo4" secondAttribute="left" constant="-8" id="lHM-GU-9E1"/>
                             <constraint firstItem="paa-io-Roo" firstAttribute="left" secondItem="kh9-bI-dsS" secondAttribute="left" constant="60" id="ooC-BQ-tnF" userLabel="hamdy"/>
