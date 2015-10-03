@@ -35,21 +35,21 @@
 }
 -(void)changeViewRTL:(UIView*)tempView{
     
-    for (NSLayoutConstraint *constrain in tempView.constraints) {
+    for (NSLayoutConstraint *constraint in tempView.constraints) {
         
         
-        NSLayoutAttribute firstAttribute = constrain.firstAttribute;
-        NSLayoutAttribute secondAttribute = constrain.secondAttribute;
+        NSLayoutAttribute firstAttribute = constraint.firstAttribute;
+        NSLayoutAttribute secondAttribute = constraint.secondAttribute;
         
         if ((firstAttribute == NSLayoutAttributeLeading || firstAttribute == NSLayoutAttributeTrailing ||firstAttribute == NSLayoutAttributeLeft || firstAttribute == NSLayoutAttributeRight ) && (secondAttribute == NSLayoutAttributeLeading || secondAttribute == NSLayoutAttributeTrailing || secondAttribute == NSLayoutAttributeLeft || secondAttribute == NSLayoutAttributeRight)) {
             
             firstAttribute = [self changeAttributeValue:firstAttribute];
             secondAttribute = [self changeAttributeValue:secondAttribute];
             
-            constrain.constant *= -1;
-            NSLayoutConstraint *constrainNew =  [NSLayoutConstraint constraintWithItem:constrain.firstItem attribute:firstAttribute relatedBy:constrain.relation toItem:constrain.secondItem attribute:secondAttribute multiplier:constrain.multiplier constant:constrain.constant];
-            [tempView removeConstraint:constrain];
-            [tempView addConstraint:constrainNew];
+            constraint.constant *= -1;
+            NSLayoutConstraint *constraintNew =  [NSLayoutConstraint constraintWithItem:constraint.firstItem attribute:firstAttribute relatedBy:constraint.relation toItem:constraint.secondItem attribute:secondAttribute multiplier:constraint.multiplier constant:constraint.constant];
+            [tempView removeConstraint:constraint];
+            [tempView addConstraint:constraintNew];
             
         }
         
