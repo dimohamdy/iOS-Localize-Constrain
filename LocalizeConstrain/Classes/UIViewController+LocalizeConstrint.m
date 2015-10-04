@@ -15,7 +15,6 @@
     
     for (NSLayoutConstraint *constraint in tempView.constraints) {
         
-        
         NSLayoutAttribute firstAttribute = constraint.firstAttribute;
         NSLayoutAttribute secondAttribute = constraint.secondAttribute;
         
