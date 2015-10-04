@@ -10,4 +10,9 @@ Localize-Constrain-On-The-Fly
 ![Localize](https://raw.githubusercontent.com/dimohamdy/iOS-Localize-Constrain/master/image.gif)
 
 
-##The demo test subviews RTL and LTR constrain localize
+#The demo test subviews RTL and LTR constrain localize
+
+
+###Install using pod
+pod 'iOS-Localize-Constrain'
+
