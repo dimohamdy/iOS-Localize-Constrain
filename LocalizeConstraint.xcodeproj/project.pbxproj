@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		373F7CF51BC159B2008B293E /* UIViewController+LocalizeConstrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 373F7CF41BC159B2008B293E /* UIViewController+LocalizeConstrint.m */; };
+		373F7CFB1BC1608D008B293E /* iOS-Localize-Constrain.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 373F7CF71BC1608D008B293E /* iOS-Localize-Constrain.podspec */; };
+		373F7CFC1BC1608D008B293E /* license in Resources */ = {isa = PBXBuildFile; fileRef = 373F7CF81BC1608D008B293E /* license */; };
+		373F7CFD1BC1608D008B293E /* UIViewController+LocalizeConstrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 373F7CFA1BC1608D008B293E /* UIViewController+LocalizeConstrint.m */; };
 		37921CF51BBE2DD20090387C /* LocalizeConstrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37921CF41BBE2DD20090387C /* LocalizeConstrainTests.m */; };
 		37DDFA8F1BBAEE3C003C3ED5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA8E1BBAEE3C003C3ED5 /* main.m */; };
 		37DDFA921BBAEE3C003C3ED5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA911BBAEE3C003C3ED5 /* AppDelegate.m */; };
@@ -28,8 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		373F7CF31BC159B2008B293E /* UIViewController+LocalizeConstrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LocalizeConstrint.h"; sourceTree = "<group>"; };
-		373F7CF41BC159B2008B293E /* UIViewController+LocalizeConstrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LocalizeConstrint.m"; sourceTree = "<group>"; };
+		373F7CF71BC1608D008B293E /* iOS-Localize-Constrain.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iOS-Localize-Constrain.podspec"; sourceTree = "<group>"; };
+		373F7CF81BC1608D008B293E /* license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
+		373F7CF91BC1608D008B293E /* UIViewController+LocalizeConstrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LocalizeConstrint.h"; sourceTree = "<group>"; };
+		373F7CFA1BC1608D008B293E /* UIViewController+LocalizeConstrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LocalizeConstrint.m"; sourceTree = "<group>"; };
 		37921CF41BBE2DD20090387C /* LocalizeConstrainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeConstrainTests.m; sourceTree = "<group>"; };
 		37DDFA891BBAEE3C003C3ED5 /* LocalizeConstraint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizeConstraint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DDFA8D1BBAEE3C003C3ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,13 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		373F7CF21BC159B2008B293E /* LocalizeConstrain */ = {
+		373F7CF61BC1608D008B293E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				373F7CF31BC159B2008B293E /* UIViewController+LocalizeConstrint.h */,
-				373F7CF41BC159B2008B293E /* UIViewController+LocalizeConstrint.m */,
+				373F7CF71BC1608D008B293E /* iOS-Localize-Constrain.podspec */,
+				373F7CF81BC1608D008B293E /* license */,
+				373F7CF91BC1608D008B293E /* UIViewController+LocalizeConstrint.h */,
+				373F7CFA1BC1608D008B293E /* UIViewController+LocalizeConstrint.m */,
 			);
-			path = LocalizeConstrain;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		37DDFA801BBAEE3C003C3ED5 = {
@@ -97,8 +103,8 @@
 				37DDFA911BBAEE3C003C3ED5 /* AppDelegate.m */,
 				37DDFA931BBAEE3C003C3ED5 /* ViewController.h */,
 				37DDFA941BBAEE3C003C3ED5 /* ViewController.m */,
+				373F7CF61BC1608D008B293E /* Classes */,
 				37DDFA961BBAEE3C003C3ED5 /* Main.storyboard */,
-				373F7CF21BC159B2008B293E /* LocalizeConstrain */,
 				37DDFA991BBAEE3C003C3ED5 /* Images.xcassets */,
 				37DDFA9B1BBAEE3C003C3ED5 /* LaunchScreen.xib */,
 				37DDFA8C1BBAEE3C003C3ED5 /* Supporting Files */,
@@ -212,9 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373F7CFC1BC1608D008B293E /* license in Resources */,
 				37DDFA981BBAEE3C003C3ED5 /* Main.storyboard in Resources */,
 				37DDFA9D1BBAEE3C003C3ED5 /* LaunchScreen.xib in Resources */,
 				37DDFA9A1BBAEE3C003C3ED5 /* Images.xcassets in Resources */,
+				373F7CFB1BC1608D008B293E /* iOS-Localize-Constrain.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +242,7 @@
 			files = (
 				37DDFA951BBAEE3C003C3ED5 /* ViewController.m in Sources */,
 				37DDFA921BBAEE3C003C3ED5 /* AppDelegate.m in Sources */,
-				373F7CF51BC159B2008B293E /* UIViewController+LocalizeConstrint.m in Sources */,
+				373F7CFD1BC1608D008B293E /* UIViewController+LocalizeConstrint.m in Sources */,
 				37DDFA8F1BBAEE3C003C3ED5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
