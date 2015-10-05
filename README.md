@@ -10,7 +10,7 @@ Localize-Constrain-On-The-Fly
 ![Localize](https://raw.githubusercontent.com/dimohamdy/iOS-Localize-Constrain/master/image.gif)
 
 
-##The demo test subViews and UITable
+##The demo test subViews and UITableView
 
 
 ###Install using pod
