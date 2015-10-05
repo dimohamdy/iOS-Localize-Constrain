@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "UIViewController+LocalizeConstrint.h"
+#import "UIView+viewRecursion.h"
+
 @interface ViewController ()
 
 @end
@@ -27,8 +29,7 @@
 
 - (IBAction)changeToArabic:(id)sender {
     
-    [self changeViewRTL:self.view];
-    for (UIView *tempView in self.view.subviews) {
+    for (UIView *tempView in [self.view allSubViews]) {
         
         [self changeViewRTL:tempView];
     }

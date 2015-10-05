@@ -86,9 +86,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "*.{h,m}"
-
-  # s.public_header_files = "*.h"
+s.source       = { :git => "https://github.com/dimohamdy/iOS-Localize-Constrain.git", :commit => "5e089e14bb0c80baeb1c36ba28624e66b49259f4" }
+s.source_files  = 'Classes/*.{h,m}'
 
 
 

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>CF09AA5A-4CC9-45D3-A533-8FAFCF090D85</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>LocalizeConstraint</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3F576D16E9B95FC0BDC63664A2A923665043430C</key>
 		<string>https://github.com/dimohamdy/iOS-Localize-Constrain.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LocalizeConstraint.xcodeproj/project.xcworkspace</string>
+	<string>LocalizeConstraint.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3F576D16E9B95FC0BDC63664A2A923665043430C</key>

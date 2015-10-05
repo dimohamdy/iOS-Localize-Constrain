@@ -11,6 +11,8 @@
 		373F7CFC1BC1608D008B293E /* license in Resources */ = {isa = PBXBuildFile; fileRef = 373F7CF81BC1608D008B293E /* license */; };
 		373F7CFD1BC1608D008B293E /* UIViewController+LocalizeConstrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 373F7CFA1BC1608D008B293E /* UIViewController+LocalizeConstrint.m */; };
 		37921CF51BBE2DD20090387C /* LocalizeConstrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37921CF41BBE2DD20090387C /* LocalizeConstrainTests.m */; };
+		37D18AC91BC2FCC200C62B2E /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D18AC81BC2FCC200C62B2E /* TestTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		37D18ACC1BC30B2400C62B2E /* UIView+viewRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D18ACB1BC30B2400C62B2E /* UIView+viewRecursion.m */; settings = {ASSET_TAGS = (); }; };
 		37DDFA8F1BBAEE3C003C3ED5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA8E1BBAEE3C003C3ED5 /* main.m */; };
 		37DDFA921BBAEE3C003C3ED5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA911BBAEE3C003C3ED5 /* AppDelegate.m */; };
 		37DDFA951BBAEE3C003C3ED5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA941BBAEE3C003C3ED5 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 		373F7CF91BC1608D008B293E /* UIViewController+LocalizeConstrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LocalizeConstrint.h"; sourceTree = "<group>"; };
 		373F7CFA1BC1608D008B293E /* UIViewController+LocalizeConstrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LocalizeConstrint.m"; sourceTree = "<group>"; };
 		37921CF41BBE2DD20090387C /* LocalizeConstrainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeConstrainTests.m; sourceTree = "<group>"; };
+		37D18AC71BC2FCC200C62B2E /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		37D18AC81BC2FCC200C62B2E /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		37D18ACA1BC30B2400C62B2E /* UIView+viewRecursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+viewRecursion.h"; sourceTree = "<group>"; };
+		37D18ACB1BC30B2400C62B2E /* UIView+viewRecursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+viewRecursion.m"; sourceTree = "<group>"; };
 		37DDFA891BBAEE3C003C3ED5 /* LocalizeConstraint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizeConstraint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DDFA8D1BBAEE3C003C3ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37DDFA8E1BBAEE3C003C3ED5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +109,10 @@
 				37DDFA911BBAEE3C003C3ED5 /* AppDelegate.m */,
 				37DDFA931BBAEE3C003C3ED5 /* ViewController.h */,
 				37DDFA941BBAEE3C003C3ED5 /* ViewController.m */,
+				37D18AC71BC2FCC200C62B2E /* TestTableViewController.h */,
+				37D18AC81BC2FCC200C62B2E /* TestTableViewController.m */,
+				37D18ACA1BC30B2400C62B2E /* UIView+viewRecursion.h */,
+				37D18ACB1BC30B2400C62B2E /* UIView+viewRecursion.m */,
 				373F7CF61BC1608D008B293E /* Classes */,
 				37DDFA961BBAEE3C003C3ED5 /* Main.storyboard */,
 				37DDFA991BBAEE3C003C3ED5 /* Images.xcassets */,
@@ -240,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D18ACC1BC30B2400C62B2E /* UIView+viewRecursion.m in Sources */,
 				37DDFA951BBAEE3C003C3ED5 /* ViewController.m in Sources */,
 				37DDFA921BBAEE3C003C3ED5 /* AppDelegate.m in Sources */,
+				37D18AC91BC2FCC200C62B2E /* TestTableViewController.m in Sources */,
 				373F7CFD1BC1608D008B293E /* UIViewController+LocalizeConstrint.m in Sources */,
 				37DDFA8F1BBAEE3C003C3ED5 /* main.m in Sources */,
 			);

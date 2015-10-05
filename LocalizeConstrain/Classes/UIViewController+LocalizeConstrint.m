@@ -10,11 +10,14 @@
 
 @implementation UIViewController (LocalizeConstrint)
 -(void)changeViewRTL:(UIView*)tempView{
+ 
     NSMutableArray *constraintsToAdd = [[NSMutableArray alloc]init];
     NSMutableArray *constraintsToRemove = [[NSMutableArray alloc]init];
     
     for (NSLayoutConstraint *constraint in tempView.constraints) {
         
+        
+        NSLog(@"constraint %@",constraint.identifier);
         NSLayoutAttribute firstAttribute = constraint.firstAttribute;
         NSLayoutAttribute secondAttribute = constraint.secondAttribute;
         
@@ -46,6 +49,7 @@
     switch (attribute) {
         case NSLayoutAttributeLeading:
             attribute = NSLayoutAttributeTrailing;
+            break;
         case NSLayoutAttributeTrailing:
             attribute = NSLayoutAttributeLeading;
             break;
