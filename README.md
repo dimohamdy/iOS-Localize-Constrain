@@ -14,5 +14,6 @@ Localize-Constrain-On-The-Fly
 
 
 ###Install using pod
-pod 'iOS-Localize-Constrain'
+    
+    pod 'iOS-Localize-Constrain'  , '~> 0.0.8'
 
