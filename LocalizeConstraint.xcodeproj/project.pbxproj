@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3746A3F71BC32D4A0008E4BE /* UIViewController+LocalizeConstrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746A3F41BC32D4A0008E4BE /* UIViewController+LocalizeConstrint.m */; };
-		37921CF51BBE2DD20090387C /* LocalizeConstrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37921CF41BBE2DD20090387C /* LocalizeConstrainTests.m */; };
 		37D18AC91BC2FCC200C62B2E /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D18AC81BC2FCC200C62B2E /* TestTableViewController.m */; };
 		37D18ACC1BC30B2400C62B2E /* UIView+viewRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D18ACB1BC30B2400C62B2E /* UIView+viewRecursion.m */; };
 		37DDFA8F1BBAEE3C003C3ED5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DDFA8E1BBAEE3C003C3ED5 /* main.m */; };
@@ -18,16 +17,6 @@
 		37DDFA9A1BBAEE3C003C3ED5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DDFA991BBAEE3C003C3ED5 /* Images.xcassets */; };
 		37DDFA9D1BBAEE3C003C3ED5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37DDFA9B1BBAEE3C003C3ED5 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		37DDFAA31BBAEE3D003C3ED5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 37DDFA811BBAEE3C003C3ED5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 37DDFA881BBAEE3C003C3ED5;
-			remoteInfo = LocalizeConstrain;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3746A3F31BC32D4A0008E4BE /* UIViewController+LocalizeConstrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LocalizeConstrint.h"; sourceTree = "<group>"; };
@@ -47,19 +36,11 @@
 		37DDFA971BBAEE3C003C3ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37DDFA991BBAEE3C003C3ED5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37DDFA9C1BBAEE3C003C3ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		37DDFAA21BBAEE3D003C3ED5 /* LocalizeConstraintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizeConstraintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DDFAA71BBAEE3D003C3ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		37DDFA861BBAEE3C003C3ED5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		37DDFA9F1BBAEE3D003C3ED5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				37DDFA891BBAEE3C003C3ED5 /* LocalizeConstraint.app */,
-				37DDFAA21BBAEE3D003C3ED5 /* LocalizeConstraintTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,24 +142,6 @@
 			productReference = 37DDFA891BBAEE3C003C3ED5 /* LocalizeConstraint.app */;
 			productType = "com.apple.product-type.application";
 		};
-		37DDFAA11BBAEE3D003C3ED5 /* LocalizeConstraintTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 37DDFAAF1BBAEE3D003C3ED5 /* Build configuration list for PBXNativeTarget "LocalizeConstraintTests" */;
-			buildPhases = (
-				37DDFA9E1BBAEE3D003C3ED5 /* Sources */,
-				37DDFA9F1BBAEE3D003C3ED5 /* Frameworks */,
-				37DDFAA01BBAEE3D003C3ED5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				37DDFAA41BBAEE3D003C3ED5 /* PBXTargetDependency */,
-			);
-			name = LocalizeConstraintTests;
-			productName = LocalizeConstrainTests;
-			productReference = 37DDFAA21BBAEE3D003C3ED5 /* LocalizeConstraintTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +153,6 @@
 				TargetAttributes = {
 					37DDFA881BBAEE3C003C3ED5 = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					37DDFAA11BBAEE3D003C3ED5 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 37DDFA881BBAEE3C003C3ED5;
 					};
 				};
 			};
@@ -212,7 +170,6 @@
 			projectRoot = "";
 			targets = (
 				37DDFA881BBAEE3C003C3ED5 /* LocalizeConstraint */,
-				37DDFAA11BBAEE3D003C3ED5 /* LocalizeConstraintTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,13 +182,6 @@
 				37DDFA981BBAEE3C003C3ED5 /* Main.storyboard in Resources */,
 				37DDFA9D1BBAEE3C003C3ED5 /* LaunchScreen.xib in Resources */,
 				37DDFA9A1BBAEE3C003C3ED5 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		37DDFAA01BBAEE3D003C3ED5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,23 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37DDFA9E1BBAEE3D003C3ED5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37921CF51BBE2DD20090387C /* LocalizeConstrainTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		37DDFAA41BBAEE3D003C3ED5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 37DDFA881BBAEE3C003C3ED5 /* LocalizeConstraint */;
-			targetProxy = 37DDFAA31BBAEE3D003C3ED5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		37DDFA961BBAEE3C003C3ED5 /* Main.storyboard */ = {
@@ -389,40 +323,6 @@
 			};
 			name = Release;
 		};
-		37DDFAB01BBAEE3D003C3ED5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LocalizeConstrainTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = LocalizeConstraintTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalizeConstrain.app/LocalizeConstrain";
-			};
-			name = Debug;
-		};
-		37DDFAB11BBAEE3D003C3ED5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LocalizeConstrainTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = LocalizeConstraintTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalizeConstrain.app/LocalizeConstrain";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -440,15 +340,6 @@
 			buildConfigurations = (
 				37DDFAAD1BBAEE3D003C3ED5 /* Debug */,
 				37DDFAAE1BBAEE3D003C3ED5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		37DDFAAF1BBAEE3D003C3ED5 /* Build configuration list for PBXNativeTarget "LocalizeConstraintTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				37DDFAB01BBAEE3D003C3ED5 /* Debug */,
-				37DDFAB11BBAEE3D003C3ED5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
