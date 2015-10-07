@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOS-Localize-Constrain"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "localize constrain on the fly"
 
   s.description  = <<-DESC
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/dimohamdy/iOS-Localize-Constrain.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/dimohamdy/iOS-Localize-Constrain.git", :tag => "0.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #
 
 
-  s.source_files = "*.{m,h}"
+  s.source_files = "Classes/*.{m,h}"
 
 
    

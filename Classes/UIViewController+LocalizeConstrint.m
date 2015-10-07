@@ -47,6 +47,7 @@
     switch (attribute) {
         case NSLayoutAttributeLeading:
             attribute = NSLayoutAttributeTrailing;
+            break;
         case NSLayoutAttributeTrailing:
             attribute = NSLayoutAttributeLeading;
             break;
