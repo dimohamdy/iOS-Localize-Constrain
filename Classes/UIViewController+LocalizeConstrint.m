@@ -10,6 +10,7 @@
 
 @implementation UIViewController (LocalizeConstrint)
 -(void)changeViewRTL:(UIView*)tempView{
+    
     NSMutableArray *constraintsToAdd = [[NSMutableArray alloc]init];
     NSMutableArray *constraintsToRemove = [[NSMutableArray alloc]init];
     
@@ -18,8 +19,8 @@
         
         NSLayoutAttribute firstAttribute = constraint.firstAttribute;
         NSLayoutAttribute secondAttribute = constraint.secondAttribute;
-        
-        if ((firstAttribute == NSLayoutAttributeLeading || firstAttribute == NSLayoutAttributeTrailing ||firstAttribute == NSLayoutAttributeLeft || firstAttribute == NSLayoutAttributeRight ) && (secondAttribute == NSLayoutAttributeLeading || secondAttribute == NSLayoutAttributeTrailing || secondAttribute == NSLayoutAttributeLeft || secondAttribute == NSLayoutAttributeRight)) {
+
+        if ([self IsValideAttribute:firstAttribute] && [self IsValideAttribute:secondAttribute]) {
             
             firstAttribute = [self changeAttributeValue:firstAttribute];
             secondAttribute = [self changeAttributeValue:secondAttribute];
@@ -30,7 +31,6 @@
             
             [constraintsToRemove addObject:constraint];
             [constraintsToAdd addObject:constraintNew];
-            
             
         }
         
@@ -43,19 +43,41 @@
         [tempView addConstraint:constraint];
     }
 }
+
+-(BOOL)IsValideAttribute:(NSLayoutAttribute)attribute{
+    
+    if (attribute == NSLayoutAttributeLeading || attribute == NSLayoutAttributeTrailing || attribute == NSLayoutAttributeLeft || attribute == NSLayoutAttributeRight ||
+        attribute == NSLayoutAttributeLeadingMargin || attribute == NSLayoutAttributeTrailingMargin || attribute == NSLayoutAttributeLeftMargin || attribute == NSLayoutAttributeRightMargin){
+        return YES;
+    }else{
+        return NO;
+    }
+}
 -(NSLayoutAttribute)changeAttributeValue:(NSLayoutAttribute)attribute{
     switch (attribute) {
         case NSLayoutAttributeLeading:
             attribute = NSLayoutAttributeTrailing;
             break;
+        case NSLayoutAttributeLeadingMargin:
+            attribute = NSLayoutAttributeTrailingMargin;
+            break;
         case NSLayoutAttributeTrailing:
             attribute = NSLayoutAttributeLeading;
+            break;
+        case NSLayoutAttributeTrailingMargin:
+            attribute = NSLayoutAttributeLeadingMargin;
             break;
         case NSLayoutAttributeLeft:
             attribute = NSLayoutAttributeRight;
             break;
+        case NSLayoutAttributeLeftMargin:
+            attribute = NSLayoutAttributeRightMargin;
+            break;
         case NSLayoutAttributeRight:
             attribute = NSLayoutAttributeLeft;
+            break;
+        case NSLayoutAttributeRightMargin:
+            attribute = NSLayoutAttributeLeftMargin;
             break;
         default:
             break;
