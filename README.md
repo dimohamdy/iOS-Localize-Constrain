@@ -30,7 +30,26 @@ Now localization of views is simple , only fews of lines in viewDidLoad for each
         }
     }
 ```
-  
+##Use it for Cell 
+
+```
+#import "UIViewController+LocalizeConstrint.h"
+#import "UIView+viewRecursion.h"
+```
+ in awakeFromNib
+```
+ //check if language is Arabic will loop for all view and flip constrain
+- (void)awakeFromNib {
+    // Initialization code
+    if (GetAppLanguage() == UILanguageArabic) {
+        for (UIView *tempView in [self allSubViews]) {
+            
+            [self changeViewRTL:tempView];
+        }
+    }
+}
+```
+
 This image is old , Run demo to show more.
 
 ![Localize](https://raw.githubusercontent.com/dimohamdy/iOS-Localize-Constrain/master/image.gif)
